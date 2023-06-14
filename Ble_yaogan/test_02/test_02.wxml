@@ -1,0 +1,44 @@
+<button bindtap='openadapter'>打开适配器</button>
+<!-- <button bindtap='closeadapter'>关闭适配器</button> -->
+<button bindtap='opendiscovery'>开始搜索</button>
+<!-- <button bindtap='closediscovery'>关闭搜索</button> -->
+<button bindtap='getdevice'>获取设备</button>
+<button bindtap='getconnecteddevice'>获取已连接设备</button>
+<button bindtap='connecteddevice'>连接我的设备</button>
+<button bindtap='getservice'>获取服务</button>
+<button bindtap='getcharacteristics'>获取特征值</button>
+<!-- <button bindtap='startread'>读取值</button> -->
+<button bindtap='startnotify'>开启notify</button>
+<button class="startwrite" bindtap='startwriteH'>左上</button>
+<button class="startwrite" bindtap='startwriteA'>前进</button>
+<button class="startwrite" bindtap='startwriteB'>右上</button>
+<button class="startwrite" bindtap='startwriteG'>左转</button>
+<button class="startwrite" bindtap='startwriteZ'>停车</button>
+<button class="startwrite" bindtap='startwriteC'>右转</button>
+<button class="startwrite" bindtap='startwriteF'>左下</button>
+<button class="startwrite" bindtap='startwriteE'>后退</button>
+<button class="startwrite" bindtap='startwriteD'>右下</button>
+<button class="startwrite" bindtap='startwriteY'>减速</button>
+<button class="startwrite" bindtap=''>...</button>
+<button class="startwrite" bindtap='startwriteX'>加速</button>
+<button bindtap=''> </button>
+<view class="relative">
+
+  <!-- 背景图片 -->
+  <image style="width: 100px; height: 100px;" class="pic_background" src="../../yaogan_di.png"></image>
+
+
+  <!-- 摇杆图片 -->
+  <image style="width: 80px; height: 80px;left:{{leftLooks}}px;top:{{topLooks}}px;" bindtouchend='ImageReturn' bindtouchmove='ImageTouchMove' class="pic_tou" src="../../yaogan_tou.png " bindtap="ImageTouch"></image>
+
+  <div class="box">
+    <text class="log-item">虚拟摇杆中心：(150,75)</text>
+    <text class="log-item">当前滑动位置：({{leftLooks}},{{topLooks}})</text>
+    <text class="log-item">摇杆偏转角度：{{angle}}°</text>
+
+  </div>
+
+</view>
+
+
+

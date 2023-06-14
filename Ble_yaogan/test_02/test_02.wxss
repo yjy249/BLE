@@ -1,0 +1,66 @@
+/* test_02/test_02.wxss */
+/* .startwritel {
+  width: 20% !important; 
+  float:left;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-weight: 100;
+  background-color: rgb(34, 228, 202); 
+  margin-top: 5rpx; 
+  border-radius: 40rpx; 
+} */
+/* .startwriteB {
+  width: 30% !important; 
+  float: right;
+  background-color: rgb(34, 228, 202); 
+  margin-top: 5rpx; 
+  height:70rpx; 
+  border-radius: 40rpx; 
+}*/
+.startwrite:not([size='mini']){ 
+  display: flex; 
+  float:left;
+  align-items: center; 
+  justify-content: center; 
+  background-color: rgb(34, 228, 202); 
+  margin-top: 15rpx; 
+  margin-left: 15rpx;
+  padding: 0rpx; 
+  width: 30% !important; 
+  height:70rpx; 
+  border-radius: 40rpx; 
+  color: black; }
+
+  .log-item {
+    margin: 2rpx;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .relative {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  .pic_background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    left: 140px;
+  }
+  
+  .pic_tou {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    left: 150px;
+  }
+  
